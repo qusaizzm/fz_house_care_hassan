@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:fz_hassan/Features/auth/widget/custom_textfield.dart';
 import 'package:fz_hassan/Features/home/screens/descover_details.dart';
 import 'package:fz_hassan/init/appbar.dart';
 import 'package:fz_hassan/init/constants.dart';
@@ -160,9 +159,10 @@ class _DiscoverState extends State<Discover> {
     );
   }
 
+  // ignore: non_constant_identifier_names
   Widget ListCareItem({required name, img}) {
     return InkWell(
-      onTap: () => onPush(context: context, go: DiscoverDetails()),
+      onTap: () => onPush(context: context, go:const DiscoverDetails()),
       child: Container(
         margin: const EdgeInsets.symmetric(horizontal: 12),
         child: Column(

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:fz_hassan/Features/auth/widget/custom_textfield.dart';
 import 'package:fz_hassan/init/appbar.dart';
 import 'package:fz_hassan/init/constants.dart';
 

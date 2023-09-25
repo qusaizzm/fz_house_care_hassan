@@ -3,15 +3,40 @@ import 'package:flutter/material.dart';
 import 'package:flutter/physics.dart';
 import 'package:flutter/services.dart';
 import 'package:fz_hassan/init/constants.dart';
-import 'package:fz_hassan/rive_app/models/tab_item.dart';
 // import 'package:fz_hassan/rive_app/theme.dart';/
 import 'package:rive/rive.dart' hide LinearGradient;
-import 'package:fz_hassan/rive_app/assets.dart' as app_assets;
+import 'package:fz_hassan/init/constants.dart' as app_assets;
 
 import 'screens/descover.dart';
 import 'screens/homeBody.dart';
 import 'screens/comunty.dart';
 import 'screens/mess.dart';
+
+class TabItem {
+  TabItem({
+    this.stateMachine = "",
+    this.artboard = "",
+    this.status,
+  });
+
+  UniqueKey? id = UniqueKey();
+  String stateMachine;
+  String artboard;
+  late SMIBool? status;
+
+  static List<TabItem> tabItemsList = [
+    TabItem(stateMachine: "HOME_interactivity", artboard: "HOME"),
+    TabItem(stateMachine: "USER_Interactivity", artboard: "USER"),
+    TabItem(stateMachine: "CHAT_Interactivity", artboard: "CHAT"),
+    TabItem(stateMachine: "SETTINGS_Interactivity", artboard: "SETTINGS"),
+    TabItem(stateMachine: "BELL_Interactivity", artboard: "BELL"),
+    // TabItem(stateMachine: "RELOAD_Interactivity", artboard: "RELOAD"),
+    // TabItem(stateMachine: "AUDIO_Interactivity", artboard: "AUDIO"),
+    // TabItem(stateMachine: "SEARCH_Interactivity", artboard: "SEARCH"),
+    // TabItem(stateMachine: "TIMER_Interactivity", artboard: "TIMER"),
+    // TabItem(stateMachine: "STAR_Interactivity", artboard: "STAR"),
+  ];
+}
 
 // Common Tab Scene for the tabs other than 1st one, showing only tab name in center
 Widget commonTabScene(String tabName) {

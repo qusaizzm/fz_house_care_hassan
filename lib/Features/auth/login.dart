@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:fz_hassan/Features/home/home.dart';
-import 'package:fz_hassan/init/appbar.dart';
 import 'package:fz_hassan/init/authbtn.dart';
 import 'package:fz_hassan/init/btn.dart';
 import 'package:fz_hassan/init/constants.dart';
@@ -17,7 +16,7 @@ class Login extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Container(
+        title: SizedBox(
           height: 100,
           width: 100,
           child: Image.asset(
@@ -54,27 +53,27 @@ class Login extends StatelessWidget {
                     elevation: 1.0,
                     child: Container(
                       padding: const EdgeInsets.all(10.0),
-                      child: Column(
+                      child: const Column(
                         children: <Widget>[
-                          const Text(
+                          Text(
                             "Login",
                             style: TextStyle(
                                 color: kPrimaryColor,
                                 fontSize: 20,
                                 fontWeight: FontWeight.bold),
                           ),
-                          const SizedBox(height: 15.0),
-                          const CustomTextBox(
+                          SizedBox(height: 15.0),
+                          CustomTextBox(
                             hint: "Email",
                             prefix: Icon(Icons.email),
                             // suffix: Icon(Icons.email),
                           ),
-                          const SizedBox(height: 10.0),
-                          const CustomTextBox(
+                          SizedBox(height: 10.0),
+                          CustomTextBox(
                             hint: "Password",
                             prefix: Icon(Icons.visibility),
                           ),
-                          const SizedBox(height: 15.0),
+                          SizedBox(height: 15.0),
                         ],
                       ),
                     ),
@@ -85,10 +84,10 @@ class Login extends StatelessWidget {
                 ),
                 Row(
                   children: <Widget>[
-                    Expanded(child: Text("Don't Have a Account?")),
+                    const Expanded(child: Text("Don't Have a Account?")),
                     InkWell(
                       onTap: () => onPush(context: context, go: const SignUp()),
-                      child: Text(
+                      child: const Text(
                         "Sign Up",
                         style: TextStyle(
                           color: kPrimaryColor,
@@ -102,7 +101,7 @@ class Login extends StatelessWidget {
                 ),
                 const MyBTN(go: HassanHome(), txt: "LOGIN"),
                 const SizedBox(height: 15.0),
-                Center(child: const Text("OR")),
+                const Center(child: Text("OR")),
                 const SizedBox(height: 15.0),
                 Txtox(txt: "Gmail", icon: FontAwesomeIcons.google),
                 const SizedBox(height: 10.0),

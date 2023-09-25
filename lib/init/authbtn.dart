@@ -3,6 +3,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import 'constants.dart';
 
+// ignore: non_constant_identifier_names
 Container Txtox({required txt, required icon}) {
   return Container(
     padding: const EdgeInsets.all(12),
@@ -17,7 +18,7 @@ Container Txtox({required txt, required icon}) {
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
         const SizedBox(width: 50),
-        Container(width: 20, child: FaIcon(icon)),
+        SizedBox(width: 20, child: FaIcon(icon)),
         const SizedBox(width: 12),
         Text("continue with $txt"),
       ],

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:fz_hassan/Features/home/home.dart';
-import 'package:fz_hassan/init/appbar.dart';
 import 'package:fz_hassan/init/authbtn.dart';
 import 'package:fz_hassan/init/btn.dart';
 import 'package:fz_hassan/init/constants.dart';
@@ -17,7 +16,7 @@ class SignUp extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Container(
+        title: SizedBox(
           height: 100,
           width: 100,
           child: Image.asset(
@@ -62,36 +61,36 @@ class SignUp extends StatelessWidget {
                     elevation: 1.0,
                     child: Container(
                       padding: const EdgeInsets.all(10.0),
-                      child: Column(
+                      child: const Column(
                         children: <Widget>[
-                          const Text(
+                            Text(
                             "Sign up",
                             style: TextStyle(
                                 color: kPrimaryColor,
                                 fontSize: 20,
                                 fontWeight: FontWeight.bold),
                           ),
-                          const SizedBox(height: 15.0),
-                          const CustomTextBox(
+                            SizedBox(height: 15.0),
+                            CustomTextBox(
                             hint: "Full Name",
                             prefix: Icon(Icons.person),
                           ),
-                          const SizedBox(height: 15.0),
-                          const CustomTextBox(
+                            SizedBox(height: 15.0),
+                            CustomTextBox(
                             hint: "Email",
                             prefix: Icon(Icons.email),
                           ),
-                          const SizedBox(height: 10.0),
-                          const CustomTextBox(
+                            SizedBox(height: 10.0),
+                            CustomTextBox(
                             hint: "password",
                             prefix: Icon(Icons.visibility),
                           ),
-                          const SizedBox(height: 10.0),
-                          const CustomTextBox(
+                            SizedBox(height: 10.0),
+                            CustomTextBox(
                             hint: "re-password",
                             prefix: Icon(Icons.visibility),
                           ),
-                          const SizedBox(height: 15.0),
+                            SizedBox(height: 15.0),
                         ],
                       ),
                     ),
@@ -119,7 +118,7 @@ class SignUp extends StatelessWidget {
                 ),
                 const MyBTN(go: HassanHome(), txt: "SIGN UP"),
                 const SizedBox(height: 15.0),
-                Center(child: const Text("OR")),
+            const    Center(child:  Text("OR")),
                 const SizedBox(height: 15.0),
                 Txtox(txt: "Gmail", icon: FontAwesomeIcons.google),
                 const SizedBox(height: 10.0),

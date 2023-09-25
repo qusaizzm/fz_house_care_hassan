@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:fz_hassan/Features/auth/widget/custom_textfield.dart';
 import 'package:fz_hassan/init/appbar.dart';
 import 'package:fz_hassan/init/constants.dart';
 
@@ -147,7 +146,7 @@ class _CommunityState extends State<Community> {
             ),
           ),
           const SizedBox(height: 10.0),
-          Container(
+          SizedBox(
             height: 300,
             child: ListView.builder(
               itemCount: 7,
@@ -166,6 +165,7 @@ class _CommunityState extends State<Community> {
     );
   }
 
+  // ignore: non_constant_identifier_names
   Container SuggList({required name, img}) {
     return Container(
       margin: const EdgeInsets.symmetric(horizontal: 12),
@@ -214,6 +214,7 @@ class _CommunityState extends State<Community> {
     );
   }
 
+  // ignore: non_constant_identifier_names
   Container ListCare({required name, img}) {
     return Container(
       margin: const EdgeInsets.symmetric(horizontal: 12),

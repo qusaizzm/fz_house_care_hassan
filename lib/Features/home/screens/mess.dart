@@ -136,27 +136,22 @@ class _MessagesState extends State<Messages> {
 
             const SizedBox(height: 10.0),
             Expanded(
-              child: Container(
-                // height: 300,
-                child: ListView.builder(
-                  itemCount: 7,
-                  itemBuilder: (BuildContext ctxt, int index) {
-                    return Container(
-                      child: ListTile(
-                        leading: ClipRRect(
-                          borderRadius: BorderRadius.circular(22),
-                          child: Image.asset("assets/avatars/avatar_2.jpg",
-                              width: 44, height: 44),
-                        ),
-                        title: Text("items[index]"),
-                        subtitle: Text(
-                            'Subtitle dsd dsds ddd sdwwq  fdasfdw q edasd ASSD  DJKWENFIO NSANDIUF SNJIF MS'),
-                        trailing: Text("Jun 16"),
-                        //  },
-                      ),
-                    );
-                  },
-                ),
+              child: ListView.builder(
+                itemCount: 7,
+                itemBuilder: (BuildContext ctxt, int index) {
+                  return ListTile(
+                    leading: ClipRRect(
+                      borderRadius: BorderRadius.circular(22),
+                      child: Image.asset("assets/avatars/avatar_2.jpg",
+                          width: 44, height: 44),
+                    ),
+                    title: const Text("items[index]"),
+                    subtitle: const Text(
+                        'Subtitle dsd dsds ddd sdwwq  fdasfdw q edasd ASSD  DJKWENFIO NSANDIUF SNJIF MS'),
+                    trailing: const Text("Jun 16"),
+                    //  },
+                  );
+                },
               ),
             ),
 
@@ -169,6 +164,7 @@ class _MessagesState extends State<Messages> {
     );
   }
 
+  // ignore: non_constant_identifier_names
   Container SuggList({required name, img}) {
     return Container(
       margin: const EdgeInsets.symmetric(horizontal: 12),
@@ -217,6 +213,7 @@ class _MessagesState extends State<Messages> {
     );
   }
 
+  // ignore: non_constant_identifier_names
   Container ListCare({required name, img}) {
     return Container(
       margin: const EdgeInsets.symmetric(horizontal: 12),
@@ -249,6 +246,7 @@ class _MessagesState extends State<Messages> {
     );
   }
 
+  // ignore: non_constant_identifier_names
   Padding PostItems() {
     return Padding(
       padding: const EdgeInsets.only(bottom: 20, right: 16.0),
@@ -340,7 +338,7 @@ class _MessagesState extends State<Messages> {
                 const SizedBox(width: 8),
                 Expanded(
                   flex: 6,
-                  child: Container(
+                  child: SizedBox(
                     height: 180,
                     // padding: const EdgeInsets.symmetric(vertical: 8),
                     child: Column(
@@ -386,6 +384,7 @@ class _MessagesState extends State<Messages> {
     );
   }
 
+  // ignore: non_constant_identifier_names
   Widget FooterPost(txt, icon) {
     return Center(
       child: Row(

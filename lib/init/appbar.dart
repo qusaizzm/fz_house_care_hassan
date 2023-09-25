@@ -3,12 +3,15 @@ import 'package:fz_hassan/init/constants.dart';
 
 class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
   const MyAppBar({super.key, this.leading, this.actions, this.title});
+  // ignore: prefer_typing_uninitialized_variables
   final leading;
+  // ignore: prefer_typing_uninitialized_variables
   final actions;
+  // ignore: prefer_typing_uninitialized_variables
   final title;
 
   @override
-  Size get preferredSize => Size.fromHeight(60);
+  Size get preferredSize => const Size.fromHeight(60);
 
   @override
   Widget build(BuildContext context) {

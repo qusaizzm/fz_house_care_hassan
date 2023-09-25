@@ -46,7 +46,7 @@ class _HomeBodyState extends State<HomeBody> {
               fontSize: 20, fontWeight: FontWeight.bold, // color: kTxtColor,
             ),
           ),
-          Container(
+          SizedBox(
             height: 75,
             child: ListView.builder(
               itemCount: avatars.length,
@@ -64,8 +64,8 @@ class _HomeBodyState extends State<HomeBody> {
                       key: Key(index.toString()),
                       borderRadius: BorderRadius.circular(22),
                       child: Image.asset(
-                          "assets/avatars/avatar_${avatars[index]}.jpg",
-                          ),
+                        "assets/avatars/avatar_${avatars[index]}.jpg",
+                      ),
                     ),
                   ),
                 );
@@ -121,6 +121,7 @@ class _HomeBodyState extends State<HomeBody> {
     );
   }
 
+  // ignore: non_constant_identifier_names
   Padding PostItems() {
     return Padding(
       padding: const EdgeInsets.only(bottom: 20, right: 16.0),
@@ -186,7 +187,7 @@ class _HomeBodyState extends State<HomeBody> {
                     )
                   ],
                 ),
-                Text(
+                const Text(
                   "30 min",
                   style: TextStyle(color: kTxtColor),
                 ),
@@ -212,14 +213,14 @@ class _HomeBodyState extends State<HomeBody> {
                 const SizedBox(width: 8),
                 Expanded(
                   flex: 6,
-                  child: Container(
+                  child:   SizedBox(
                     height: 180,
                     // padding: const EdgeInsets.symmetric(vertical: 8),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.start,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
+                      const  Text(
                           "Post Title",
                           style: TextStyle(
                             fontSize: 16,
@@ -232,7 +233,7 @@ class _HomeBodyState extends State<HomeBody> {
                           ktxtRandom,
                           maxLines: 6,
                           overflow: TextOverflow.ellipsis,
-                          style: TextStyle(
+                          style:const TextStyle(
                             color: kTxtColor,
                           ),
                         ),
@@ -258,6 +259,7 @@ class _HomeBodyState extends State<HomeBody> {
     );
   }
 
+  // ignore: non_constant_identifier_names
   Widget FooterPost(txt, icon) {
     return Center(
       child: Row(
@@ -267,7 +269,7 @@ class _HomeBodyState extends State<HomeBody> {
           const SizedBox(width: 3),
           Text(
             txt,
-            style: TextStyle(color: kTxtColor),
+            style: const TextStyle(color: kTxtColor),
           ),
         ],
       ),

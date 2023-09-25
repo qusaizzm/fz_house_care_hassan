@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../../auth/login.dart';
@@ -37,7 +36,7 @@ class _SplashViewbodyState extends State<SplashViewbody>
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        Container(
+        SizedBox(
           height: 160,
           child: Image.asset('assets/img/logo-wi.png')),
         const SizedBox(

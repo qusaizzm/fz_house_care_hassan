@@ -2,9 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:fz_hassan/init/constants.dart';
 
 import 'Features/splash/splash_view.dart';
-import 'rive_app/home.dart';
-import 'rive_app/on_boarding/onboarding_view.dart';
-
+ 
 void main() {
   runApp(const MyApp());
 }
