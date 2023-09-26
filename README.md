@@ -3,7 +3,6 @@
 A new Flutter project.
 
 [![Alt text](assets/img/home.PNG)](https://www.youtube.com/shorts/i1BTACLvEeU)
- 
 ## Getting Started
 
 This project is a starting point for a Flutter application.
