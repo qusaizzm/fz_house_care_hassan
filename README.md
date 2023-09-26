@@ -2,7 +2,7 @@
 
 A new Flutter project.
 [![Alt text](assets/img/home.PNG)](https://www.youtube.com/shorts/i1BTACLvEeU)
-(https://www.youtube.com/watch?v=Hc79sDi3f0U "Now in Android: 55") 
+ 
 ## Getting Started
 
 This project is a starting point for a Flutter application.
