@@ -1,7 +1,9 @@
 # fz_hassan
 
 A new Flutter project.
-
+[![Now in Android: 55]          // Title
+(https://i.ytimg.com/vi/Hc79sDi3f0U/maxresdefault.jpg)] // Thumbnail
+(https://www.youtube.com/watch?v=Hc79sDi3f0U "Now in Android: 55") 
 ## Getting Started
 
 This project is a starting point for a Flutter application.
